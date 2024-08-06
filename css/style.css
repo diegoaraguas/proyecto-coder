@@ -1,0 +1,121 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*header ESCRITORIO*/
+.navegador{
+    height: 150px;
+    background-color: rgb(37, 179, 179);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cajaLogo{
+    width: 100px;
+    height: 100px;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 20px;
+}
+.lista{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: 600;
+}
+a:hover{
+    color: blueviolet;
+}
+
+/*imagen-inicio ESCRITORIO*/
+#imagen-inicio{
+       height: 700px;
+       
+    
+}
+.imagen-inicio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: aliceblue;
+            font-size: 30px;
+            background-color: rgba(17, 15, 15, 0.733);
+            font-weight: 500;
+}
+
+.caja-tarjetas{
+    display: flex;
+    gap: 20px;
+}
+
+.boton-hamburguesa{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.grid{
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+
+
+/* Media Celular */
+
+
+@media screen and (max-width:600px) {
+    
+    a{
+        font-size: 10px;
+    }
+    
+    .titulo-productos{
+        color: red;
+    }
+
+    .caja-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista{
+        display: none;
+    }
+
+    .boton-hamburguesa{
+        display:block;
+    }
+    
+}
+
+/* Media Tablet */
+ 
+@media screen and (min-width:601px) and (max-width:1200px) {
+    
+   
+
+}
+
+
