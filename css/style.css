@@ -79,6 +79,27 @@ a:hover{
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
 
+.presentacion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.titulo{
+font-size: 3rem;
+text-shadow: 2px 2px 4px rgb(0, 0, 0);
+color: aliceblue;
+}
+
+.parrafo{
+    font-size: 2rem;
+text-shadow: 2px 2px 4px rgb(0, 0, 0);
+color: aliceblue;
+}
+
+
 
 
 /* Media Celular */
