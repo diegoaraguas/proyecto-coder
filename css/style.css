@@ -99,6 +99,38 @@ text-shadow: 2px 2px 4px rgb(0, 0, 0);
 color: aliceblue;
 }
 
+footer{
+background-color: black;
+width: 100%;
+padding: 20px;
+color: aliceblue;
+}
+
+.footerCaja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.columnas{
+display: flex;
+gap: 40px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
 
 
 
