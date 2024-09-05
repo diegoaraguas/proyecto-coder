@@ -1,158 +1,157 @@
-$primary-color: #333;
-$secondary-color: #555;
-$accent-color: #e74c3c;
-$background-color: #f9f9f9;
-$text-color: #666;
-$container-width: 1200px;
-$white-color: #fff;
-$border-radius: 8px;
-
-
-//ESTILOS GENERALES
-html,body{
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-// CODIGO DE SERVICIOS
 .services {
-    background-color: $background-color;
-    padding: 50px 0;
-    .caja {
-        
-        margin: 0 auto;
-        padding: 20px;
-        
-      }
-  
-    h2 {
-      text-align: center;
-      color: $primary-color;
-      margin-bottom: 40px;
-    }
-  
-    .service-items {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-  
-      .service-item {
-        background-color: $white-color;
-        border: 1px solid #ddd;
-        border-radius: $border-radius;
-        padding: 20px;
-        text-align: center;
-        width: calc(33.333% - 20px);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: $border-radius $border-radius 0 0;
-        }
-  
-        h3 {
-          margin-top: 15px;
-          font-size: 1.5em;
-          color: $secondary-color;
-        }
-  
-        p {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
 
+.services .caja {
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  //seccion contacto
+.services h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
 
-  form{
-    max-width: $container-width/2;
-    margin: 0 auto;
-    .grupo{
-        margin-bottom: 20px;
-        label{
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input{
-            width: 100%;
-            padding: 10px;
-            border: 1px solid rgb(221, 24, 24);
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        
-    }
-    button{
-        display: block;
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background-color: $accent-color;
-        border-radius: 4px;
-        color: #fff;
-        font-size: 1.2rem;
-        cursor: pointer;
-        &:hover{
-            background-color: darken($accent-color, 10%);
-        }
-    }
-  }
+.services .service-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-  // SECCION DE NOSOTROS
+.services .service-items .service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .nosotros{
-    background-color: $primary-color;
-    color: #f9f9f9;
-    padding: 50px 20px;
-    h2{
-      text-align: center;
-      margin-bottom: 20px;
+.services .service-items .service-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
 
-    }
-    h3{
-      text-align: center;
-    }
-    p{
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 1.6;
-      
-    }
-    .team{
+.services .service-items .service-item h3 {
+  margin-top: 15px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.services .service-items .service-item p {
+  margin-top: 10px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form .grupo {
+  margin-bottom: 20px;
+}
+
+form .grupo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form .grupo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(221, 24, 24);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #e74c3c;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d62c1a;
+}
+
+.nosotros {
+  background-color: #333;
+  color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.nosotros h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nosotros h3 {
+  text-align: center;
+}
+
+.nosotros p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.nosotros .team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.nosotros .team .team-item {
+  text-align: center;
+}
+
+.nosotros .team .team-item h4 {
+  margin-bottom: 5px;
+  color: #e74c3c;
+}
+
+.nosotros .team .team-item p {
+  margin: 0;
+}
+
+.caja-tarjetas{
+  display:flex;
+  flex-wrap: wrap;
+
+  
+}
+
+@media screen and (max-width: 640px) {
+  .service-items {
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    .team-item{
-      text-align: center;
-      h4{
-        margin-bottom: 5px;
-        color: $accent-color;
-
-      }
-      p{
-        margin: 0;
-      }
-    }  
-    }
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-
-  // RESPONSIVE PARA CELULAR
-
-  @media screen and (max-width:640px) {
-     .service-items{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    
+  .services .service-items .service-item{
+    width: 300px;
   }
+}
+
+
+/*# sourceMappingURL=style.scss.map */
