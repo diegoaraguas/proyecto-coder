@@ -12,6 +12,7 @@ html, body {
 .services .caja {
   margin: 0 auto;
   padding: 20px;
+  max-width: 1200px;
 }
 
 .services h2 {
@@ -151,7 +152,12 @@ form button:hover {
   .services .service-items .service-item{
     width: 300px;
   }
+
+  .services .service-items .service-item h3{
+    font-size: 15px;
 }
+}
+
 
 
 /*# sourceMappingURL=style.scss.map */
